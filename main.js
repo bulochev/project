@@ -1,1 +1,1 @@
-alert("What the fuck r u doin here??")
+alert("What the **** r u doin here??")
