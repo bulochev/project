@@ -7,8 +7,6 @@ function detectRightNumber (){
     }
 }
 
-detectRightNumber();
-
 let obj = {
     count: numberOfFilms,
     movies: {},
@@ -17,6 +15,18 @@ let obj = {
     privat: false
 };
 
+function showMyDB() {
+    if (obj.privat == false) {
+        console.log(obj);
+    }
+}
+
+function writeMyGenres() {
+    for (let i=0; i<3; i++) {
+       obj.genres[i] = prompt("Ваш " + (+i+1) + "-й любимый жанр?");
+    }
+}
+detectRightNumber();
 if (obj.count < 10) {
     alert('Вы посмотрели довольно мало фильмов!');
 }
@@ -29,17 +39,22 @@ else if (obj.count > 30) {
 else {
     alert('Ошибка!');
 }
+directMyFilms();
+writeMyGenres();
 
-for (let i=0; i<3; i++) {
-    let tempFilmName = prompt('Один из последниз просмотренных фильмов?');
-    let tempFilmRating = prompt("Как вы его оцените?");
-    if (tempFilmName != null && tempFilmName.length <=50 && tempFilmName != '' && tempFilmRating != '') {
-        obj.movies[tempFilmName] = tempFilmRating;
-    }
-    else {
-        i--;
+function directMyFilms() {
+    for (let i=0; i<3; i++) {
+        let tempFilmName = prompt('Один из последниХ просмотренных фильмов?');
+        let tempFilmRating = prompt("Как вы его оцените?");
+        if (tempFilmName != null && tempFilmName.length <=50 && tempFilmName != '' && tempFilmRating != '') {
+            obj.movies[tempFilmName] = tempFilmRating;
+        }
+        else {
+            i--;
+        }
     }
 }
+
 
 
 /*for (let i=0; i<3; i++) {
