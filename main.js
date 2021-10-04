@@ -9,7 +9,7 @@ let obj = {
     privat: false
 };
 //alert(obj.count);
-let lastFilm1 = prompt("Какой последний фильм вы посмотрели?", ''),
+let lastFilm1 = prompt("Какой последний фильм вы посмотрел?", ''),
     ratingFilm1 = prompt("Как вы его оцените?", ''),
     lastFilm2 = prompt("Какой еще последний фильм вы посмотрели?", ''),
     ratingFilm2 = prompt ("Каквы его оцените?", '');
