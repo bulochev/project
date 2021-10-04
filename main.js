@@ -1,5 +1,13 @@
-let numberOfFilms = prompt("Сколько фильмов вы посмотрели?");
+let numberOfFilms;
 
+function detectRightNumber (){
+    numberOfFilms = prompt("Сколько фильмов вы посмотрели?");
+    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+        numberOfFilms = prompt("Сколько фильмов вы посмотрели?");
+    }
+}
+
+detectRightNumber();
 
 let obj = {
     count: numberOfFilms,
