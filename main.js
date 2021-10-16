@@ -1,4 +1,4 @@
-let numberOfFilms;
+/* let numberOfFilms;
 
 function detectRightNumber (){
     numberOfFilms = prompt("Сколько фильмов вы посмотрели?");
@@ -70,7 +70,7 @@ function directMyFilms() {
         obj.movies[tempFilmName] = tempFilmRating;
     }
 }*/
-console.log(obj);
+// console.log(obj);
 /*let i=0;
 do {
     let tempFilmName = prompt('Один из последних просмотренных фильмов?')
@@ -95,3 +95,56 @@ console.log(obj.movies);*/
 /*obj.movies[lastFilm1] = ratingFilm1;
 obj.movies[lastFilm2] = ratingFilm2;*/
 
+/* function doItNow(theWord, callback) {
+    console.log(theWord);
+    callback();
+}
+
+function newFunc() {
+    console.log("wat the fuck?");
+}
+
+doItNow('world is very small!!', newFunc);
+
+
+
+ */
+/* const opq = {
+    name: "Oleg",
+    age: 25,
+    height: 183,
+    likedFilms: {
+        firstFilm: "Interstellar",
+        secondFilm: "Scream",
+        thirdFilm: "Spider-Man"
+    },
+    makeSthing: function() {
+        console.log('text');
+    }
+};
+
+opq.makeSthing();
+
+console.log(Object.keys(opq).length);
+ */
+/* let counter = 0;
+for (let key in opq) {
+    if (typeof opq[key] === 'object'){
+        for (let i in opq[key]) {
+            //counter++;
+            console.log(opq[key][i] + " - is " + i);
+        }
+    }
+    else {
+    counter++;
+    console.log(opq[key] + " -это " + key);
+    }
+}
+console.log(counter); */ 
+
+
+const arr = prompt();
+const result = arr.split(', ');
+console.log(result.join('...'));
+
+console.log([] + 1 + 2);
