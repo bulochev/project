@@ -53,10 +53,10 @@ let obj = {
         }
     },
     toggleVisibleMyDB() {
-        if (this.privat === false) {
-        this.privat = true;
-        } else {
+        if (this.privat) {
         this.privat = false;
+        } else {
+        this.privat = true;
         }
     }
 };
