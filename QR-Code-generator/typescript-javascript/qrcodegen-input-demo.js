@@ -1,1 +1,0 @@
-const QRC = qrcodegen.QrCode;

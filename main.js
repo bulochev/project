@@ -1,4 +1,4 @@
-/* let numberOfFilms;
+let numberOfFilms;
 
 function detectRightNumber (){
     numberOfFilms = prompt("Сколько фильмов вы посмотрели?");
@@ -15,6 +15,7 @@ let obj = {
     privat: false
 };
 
+
 function showMyDB() {
     if (obj.privat == false) {
         console.log(obj);
@@ -26,7 +27,9 @@ function writeMyGenres() {
        obj.genres[i] = prompt("Ваш " + (+i+1) + "-й любимый жанр?");
     }
 }
+
 detectRightNumber();
+
 if (obj.count < 10) {
     alert('Вы посмотрели довольно мало фильмов!');
 }
@@ -39,6 +42,8 @@ else if (obj.count > 30) {
 else {
     alert('Ошибка!');
 }
+
+
 directMyFilms();
 writeMyGenres();
 
@@ -57,94 +62,3 @@ function directMyFilms() {
 
 
 
-/*for (let i=0; i<3; i++) {
-    let tempFilmName = prompt('Один из последниз просмотренных фильмов?');
-    if (tempFilmName == null) {
-        i--;
-    }
-    else if (tempFilmName.length > 50 || tempFilmName.length == 0){
-        i--;
-    }
-    else {
-        let tempFilmRating = prompt("Как вы его оцените?");
-        obj.movies[tempFilmName] = tempFilmRating;
-    }
-}*/
-// console.log(obj);
-/*let i=0;
-do {
-    let tempFilmName = prompt('Один из последних просмотренных фильмов?')
-    if (tempFilmName.length < 50 && tempFilmName.length != 0 && tempFilmName != null) {
-        let tempFilmRating = prompt('Как вы его оцените?');
-        obj.movies[tempFilmName] = tempFilmRating;
-        i++;
-    }
-}
-while (i<3);
-console.log(obj.movies);*/
-
-
-
-//alert(obj.count);
-/*let lastFilm1 = prompt("Какой последний фильм вы посмотрели?", ''),
-    ratingFilm1 = prompt("Как вы его оцените?", ''),
-    lastFilm2 = prompt("Какой еще последний фильм вы посмотрели?", ''),
-    ratingFilm2 = prompt ("Каквы его оцените?", '');*/
-
-
-/*obj.movies[lastFilm1] = ratingFilm1;
-obj.movies[lastFilm2] = ratingFilm2;*/
-
-/* function doItNow(theWord, callback) {
-    console.log(theWord);
-    callback();
-}
-
-function newFunc() {
-    console.log("wat the fuck?");
-}
-
-doItNow('world is very small!!', newFunc);
-
-
-
- */
-/* const opq = {
-    name: "Oleg",
-    age: 25,
-    height: 183,
-    likedFilms: {
-        firstFilm: "Interstellar",
-        secondFilm: "Scream",
-        thirdFilm: "Spider-Man"
-    },
-    makeSthing: function() {
-        console.log('text');
-    }
-};
-
-opq.makeSthing();
-
-console.log(Object.keys(opq).length);
- */
-/* let counter = 0;
-for (let key in opq) {
-    if (typeof opq[key] === 'object'){
-        for (let i in opq[key]) {
-            //counter++;
-            console.log(opq[key][i] + " - is " + i);
-        }
-    }
-    else {
-    counter++;
-    console.log(opq[key] + " -это " + key);
-    }
-}
-console.log(counter); */ 
-
-
-const arr = prompt();
-const result = arr.split(', ');
-console.log(result.join('...'));
-
-console.log([] + 1 + 2);
