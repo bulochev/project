@@ -36,8 +36,8 @@ let obj = {
                 i--;
             }
         }
-        this.genres.forEach(curElement => {
-           console.log(`Любимый жанр № ${this.genres.indexOf(curElement) + 1} - это ${curElement}`);
+        this.genres.forEach(curElement, index => {
+           console.log(`Любимый жанр № ${index + 1} - это ${curElement}`);
         });
     },
     directMyFilms() {
@@ -61,11 +61,11 @@ let obj = {
     }
 };
 
-obj.detectRightNumber();
-obj.whoIAm();
-obj.directMyFilms();
-obj.writeMyGenres();
-obj.toggleVisibleMyDB();
-obj.showMyDB();
+// obj.detectRightNumber();
+// obj.whoIAm();
+// obj.directMyFilms();
+// obj.writeMyGenres();
+// obj.toggleVisibleMyDB();
+// obj.showMyDB();
 
 
