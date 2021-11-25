@@ -60,7 +60,7 @@ let obj = {
         }
     }
 };
-
+fuck
 // obj.detectRightNumber();
 // obj.whoIAm();
 // obj.directMyFilms();
